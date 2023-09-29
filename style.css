@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100;200;300;400;600;700&display=swap');
+/* General styles */
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color palette */
+  --green: hsl(157, 74%, 62%);
+  --medium-blue: hsl(225, 26%, 23%);
+  --very-dark-blue: hsl(224, 35%, 11%);
+  --pure-white: hsl(0, 0%, 100%);
+  --light-blue: hsl(225, 21%, 45%);
+  --very-light-blue: hsl(225, 40%, 83%);
+}
+
+html {
+  font-family: 'Chivo', sans-serif;
+  font-size: 18px;
+  line-height: 1.556rem;
+  background-color: var(--very-dark-blue);
+}
+
+body {
+  position: relative;
+}
+
+/* Desktop styles */
+h1 {
+  font-size: 2.889rem;
+  letter-spacing: -0.01rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  line-height: 3.444rem;
+  color: white;
+  
+}
+
+main {
+  position: relative;
+  margin: 9% 0 0 11.5%;
+  aspect-ratio: 1275/640;
+}
+
+.logo {
+  position: absolute;
+  top: -1.556rem;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  
+}
+
+.bg img {
+  display: block;
+  width: auto;
+  height: 100%;
+}
+
+.info {
+  width: 57%;
+  background-color: var(--very-dark-blue);
+  position: absolute;
+  bottom: 0;
+}
+
+h1.green {
+  margin-top: 4.889rem;
+  color: var(--green)
+}
+
+.info p {
+  margin-top: 1.333rem;
+  width: 75%;
+  color: var(--very-light-blue);
+  font-weight: 100;
+}
+
+
+.bg-dots {
+  position: absolute;
+  right: 0;
+  bottom: -3.4rem;
+}
+
+form {
+  margin-top: 2.222rem;
+  background-color: var(--medium-blue);
+  width: 66.45%;
+  height: 3.11rem;
+  border-radius: 1.556rem;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+input {
+  background-color: var(--medium-blue);
+  border: none;
+  margin-left: 1.778rem;
+  border-radius: 28px;
+}
+
+button {
+  margin: 0.278rem;
+  border-radius: 1.556rem;
+  border: none;
+  background-color: var(--green);
+  width: 38%;
+}
+
+::placeholder, button {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.media {
+  margin-top: 3.556rem;
+  width: 74.135%;
+  border: 1px solid red;;
+}
+
