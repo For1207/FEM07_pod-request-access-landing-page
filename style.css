@@ -165,3 +165,71 @@ button:hover {
   opacity: 45%;
 }
 
+/* Tablet styles */
+@media only screen and (max-width: 768px) {
+  main {
+    margin: 0 0 0 2.167rem;
+    max-width: 42.67rem ;
+    height: 42.611rem;
+  }
+
+  .logo {
+    top: 1.8rem;
+  }
+
+  .bg {
+    width: 27.278rem;
+    overflow: hidden;
+  }
+
+  .bg img {
+    content: url(./assets/mobile/image-host.jpg);
+    width: 100%;
+    height: auto;
+  }
+  .info {
+    width: 87.106%;
+  }
+
+  h1.green {
+    margin-top: 3.5rem;
+  }
+
+  .info p {
+    margin-top: 0.7rem;
+  }
+
+  form {
+    width: 67.2%;
+  }
+
+  .media {
+    width: 90%;
+    margin-top: 1rem;
+  }
+
+
+  .bg-dots {
+    left: 0;
+    bottom: -14.6rem;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    background-image: url(./assets/mobile/image-host.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: 3px solid red;
+  }
+
+
+
+
+  .bg {
+    display: none;
+  }
+  
+}
+
