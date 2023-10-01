@@ -25,10 +25,11 @@
       Apple Podcasts, Google Podcasts, Pocket Casts and more!
     </p>
     <div class="bottom">
-      <form>
+      <form onsubmit="event.preventDefault()">
         <input type="text" id="email" placeholder="Email address">
         <button onclick="checkEmail()">Request Access</button>
       </form>
+      <p id="email-result">&nbsp;</p>
 
       <div class="media">
         <img src="./assets/desktop/spotify.svg" alt="Spotify icon">
@@ -43,6 +44,8 @@
     <img src="./assets/desktop/bg-pattern-dots.svg" alt="Dotted background image">
   </div>  
 </main>
+
+<script src="./script.js"></script>
 
 
 </html>

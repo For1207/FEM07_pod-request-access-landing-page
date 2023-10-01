@@ -40,7 +40,8 @@ h1 {
 
 main {
   position: relative;
-  margin: 9% 0 0 11.5%;
+  max-width: 70.833rem;
+  margin: 9% 0 0 auto;
   aspect-ratio: 1275/640;
 }
 
@@ -91,38 +92,76 @@ h1.green {
 
 form {
   margin-top: 2.222rem;
-  background-color: var(--medium-blue);
-  width: 66.45%;
+  width: 58.25%;
   height: 3.11rem;
   border-radius: 1.556rem;
   display: flex;
-  justify-content: space-between;
-  overflow: hidden;
+  background-color: var(--medium-blue);
 }
+
 
 input {
   background-color: var(--medium-blue);
-  border: none;
-  margin-left: 1.778rem;
   border-radius: 28px;
+  width: 62%;
+  padding-left: 1.778rem;
+  width: 100%;
+  color: var(--pure-white);
+  caret-color: var(--green) ;
+  border: none;
+  display: flex;
+  justify-content: flex-end;
 }
 
-button {
-  margin: 0.278rem;
-  border-radius: 1.556rem;
-  border: none;
-  background-color: var(--green);
-  width: 38%;
+input:focus {
+  border: 1px solid transparent;
+  color: var(--pure-white);
+  outline: none;
 }
+
+input:focus::placeholder {
+  opacity: 0;
+  }
 
 ::placeholder, button {
   font-size: 14px;
   font-weight: 600;
 }
+  
+
+button {
+  width: 14rem;
+  border-radius: 1.556rem;
+  background-color: var(--green);
+  margin: 0.278rem 0.278rem 0.278rem 0.578rem;
+  border: none;
+  padding: 0 1.5rem;
+  color: var(--very-dark-blue)
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: hsl(157, 100%, 85%);
+}
+
+#email-result {
+  font-size: 0.667rem;
+  color: #FB3E3E;
+  font-weight: 700;
+  margin-top: 0.444rem;
+  margin-left: 1.778rem;
+}
+
+
 
 .media {
-  margin-top: 3.556rem;
-  width: 74.135%;
-  border: 1px solid red;;
+  width: 85%;
+  margin-top: 2.33rem;
+}
+
+.media img {
+  margin-right: 2.222rem;
+  color: red;
+  opacity: 45%;
 }
 
