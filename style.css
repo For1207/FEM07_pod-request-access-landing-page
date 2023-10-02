@@ -216,20 +216,120 @@ button:hover {
 }
 
 @media only screen and (max-width: 375px) {
-  body {
-    background-image: url(./assets/mobile/image-host.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border: 3px solid red;
-  }
-
-
-
-
-  .bg {
-    display: none;
+  html {
+    font-size: 15px;
+    font-weight: 200;
+    text-align: center;
   }
   
-}
+  main {
+    margin: 0;
+    padding: 0 1.6rem;
+    width: 100%;
+  }
 
+  .logo {
+    margin-top: 3.444rem;
+    position: static;
+  }
+
+  .logo img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .bg {
+    width: 100%;
+    opacity: 0.05;
+    left: 0;
+    z-index: -1;
+  }
+
+  .info, .info p, form, .media, input, button {
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+    background-color: transparent;
+    position: static;
+  }
+
+  .info h1 {
+    font-size: 1.733rem;
+    line-height: 2.533rem;
+  }
+
+  .green {
+    margin-top: 3.8rem;
+  }
+
+  input, button, .media, #email-result {
+    width: 100%;
+    margin: 0;
+  }
+
+  .media {
+    margin-top: 2.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .media img {
+    width: 4.5rem;
+    height: auto;
+    margin-right: 0;
+  }
+  input, button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  form {
+    display: block;
+    background-color: transparent;
+    height: auto;
+    margin-top: 3.2rem;
+  }
+
+  input {
+    background-color: var(--medium-blue);
+    margin-top: 0;
+  }
+
+  button {
+    margin-top: 1rem;
+  }
+
+  .bg-dots {
+    display: none;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items:flex-start;
+    justify-content:flex-start;
+  }
+
+
+  form {
+    order: 2;
+  }
+
+
+  #email-result {
+    margin-top: 1rem;
+    order: 1;
+  }
+
+  .media {
+    order: 3;
+  }
+
+
+
+
+
+}
