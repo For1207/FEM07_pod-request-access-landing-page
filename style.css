@@ -41,6 +41,7 @@ h1 {
 main {
   position: relative;
   max-width: 70.833rem;
+  height: 35.56rem;
   margin: 9% 0 0 auto;
   aspect-ratio: 1275/640;
 }
@@ -220,6 +221,7 @@ button:hover {
     font-size: 15px;
     font-weight: 200;
     text-align: center;
+    min-width: 375px;
   }
   
   main {
