@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <!-- <link rel="stylesheet" href="style.css"> -->
-  <link rel="stylesheet" href="./style_flex.css">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Pod request access landing page</title>
 </head>
@@ -16,30 +15,33 @@
     <img src="./assets/desktop/logo.svg" alt="Company's logo">
   </div>
 
-  <div class="bg">
-    <img src="./assets/desktop/image-host.jpg" alt="Host background photo">
+  <div class="container">
+    <div class="bg">
+      <img src="./assets/desktop/image-host.jpg" alt="Host background photo">
+    </div>
+    <div class="info">
+      <h1 class="green">Publish your podcasts</h1>
+      <h1>everywhere.</h1>
+      <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
+        Apple Podcasts, Google Podcasts, Pocket Casts and more!
+      </p>
+      <div class="bottom">
+        <form onsubmit="event.preventDefault()">
+          <input type="text" id="email" placeholder="Email address">
+          <button onclick="checkEmail()">Request Access</button>
+        </form>
+        <p id="email-result">&nbsp;</p>
+  
+        <div class="media">
+          <img src="./assets/desktop/spotify.svg" alt="Spotify icon">
+          <img src="./assets/desktop/apple-podcast.svg" alt="Apple podcast icon">
+          <img src="./assets/desktop/google-podcasts.svg" alt="Google podcasts icon">
+          <img src="./assets/desktop/pocket-casts.svg" alt="Pocket Casts icon">
+        </div>
+      </div>  
+    </div>
   </div>
-  <div class="info">
-    <h1 class="green">Publish your podcasts</h1>
-    <h1>everywhere.</h1>
-    <p>Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, 
-      Apple Podcasts, Google Podcasts, Pocket Casts and more!
-    </p>
-    <div class="bottom">
-      <form onsubmit="event.preventDefault()">
-        <input type="text" id="email" placeholder="Email address">
-        <button onclick="checkEmail()">Request Access</button>
-      </form>
-      <p id="email-result">&nbsp;</p>
 
-      <div class="media">
-        <img src="./assets/desktop/spotify.svg" alt="Spotify icon">
-        <img src="./assets/desktop/apple-podcast.svg" alt="Apple podcast icon">
-        <img src="./assets/desktop/google-podcasts.svg" alt="Google podcasts icon">
-        <img src="./assets/desktop/pocket-casts.svg" alt="Pocket Casts icon">
-      </div>
-    </div>  
-  </div>
 
   <div class="bg-dots">
     <img src="./assets/desktop/bg-pattern-dots.svg" alt="Dotted background image">
